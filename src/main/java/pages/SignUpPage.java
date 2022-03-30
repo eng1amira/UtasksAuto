@@ -22,7 +22,7 @@ public class SignUpPage extends PageBase {
     By errorMessage = By.xpath("//div[contains(text(),'Failed to create an account')]");
 
 
-    public void fillInSignUpInfo(String userName, String email, String password, String passwordConfirmation) {
+    public void fillInSignUpInfo(String userName, String email, String password, String passwordConfirmation) throws InterruptedException {
 
         setElement(driver, input_userName, userName);
         setElement(driver, input_email, email);

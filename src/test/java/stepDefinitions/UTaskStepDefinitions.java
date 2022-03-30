@@ -23,7 +23,7 @@ public class UTaskStepDefinitions extends TestBase {
 
 
     @Then("^user fills mandatory fields as (.+), (.+),(.+),and (.+)$")
-    public void user_fills_mandatory_fields_as_and(String username, String email, String password, String passwordconfirmation) {
+    public void user_fills_mandatory_fields_as_and(String username, String email, String password, String passwordconfirmation) throws InterruptedException {
         signUpPage = new SignUpPage(driver);
         signUpPage.fillInSignUpInfo(username, email, password, passwordconfirmation);
     }
