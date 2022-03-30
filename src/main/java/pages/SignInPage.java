@@ -15,7 +15,6 @@ public class SignInPage extends PageBase {
     By link_signUp = By.xpath("//a[text()=\"Sign Up\"]");
     By input_email = By.xpath("//div[@id=\"email\"]//input");
     By input_password = By.xpath("//div[@id=\"password\"]//input");
-    // By btn_signIn = By.xpath("//button[@type=\"submit\"]");
     By btn_submit = By.xpath("//button[@type=\"submit\"]");
 
     public void signUp() {
@@ -28,10 +27,7 @@ public class SignInPage extends PageBase {
         driver.findElement(input_password).sendKeys(password);
         driver.findElement(btn_submit).click();
 
-       /* moveToWrite(driver, input_email, email);
-        moveToWrite(driver, input_password, password);
-        moveToANDClick(driver, btn_submit);
-        //sleep(6000);*/
+
     }
 
 }
